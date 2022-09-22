@@ -74,3 +74,14 @@ body {
 .projects__item button {
     margin-bottom: 15px;
 }
+
+/* News .....................................................*/
+.news .news--left {
+    display: flex;
+    align-items: center;
+}
+
+.news .news--left img {
+    max-width: 200px;
+    margin-left: 10px;
+}
