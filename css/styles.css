@@ -1,4 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;700&display=swap');
+
+
 /* COMMON STYLES */
 body {
     direction: rtl;
+    text-align: right;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+/* Header ...............................................*/
+.navbar {
+    box-shadow: 1px 2px 5px #ebebeb;
+}
+
+/* Home Section ........................................*/
+.home {
+    height: 600px;
+    background-image: url(../images/slide-bg-1.jpg);
+    background-size: cover;
+    padding: 1px;
+}
+
+.home-item {
+    width: 50%;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+.home-item h2 {
+    font-size: 45px;
+    color: #fff;
+}
+
+.home-item p {
+    font-size: 20px;
+    color: #fff;
 }
