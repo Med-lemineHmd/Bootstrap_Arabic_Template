@@ -1,38 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;700&family=Tajawal:wght@400;700;900&display=swap');
 /* COMMON STYLES */
+:root {
+  --maincolor: #ffc527;
+}
 body {
-    direction: rtl;
-    text-align: right;
-    font-family: 'Reem Kufi Fun', sans-serif;
+  direction: rtl;
+  text-align: right;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section__title {
+  position: relative;
+  display: inline-block;
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  position: absolute;
+  bottom: -10px;
+  height: 5px;
+  background-color: var(--maincolor);
 }
 
 /* Header ...............................................*/
 .navbar {
-    box-shadow: 1px 2px 5px #ebebeb;
+  box-shadow: 1px 2px 5px #ebebeb;
 }
 
 /* Home Section ........................................*/
 .home {
-    height: 600px;
-    background-image: url(../images/slide-bg-1.jpg);
-    background-size: cover;
-    padding: 1px;
+  height: 600px;
+  background-image: url(../images/slide-bg-1.jpg);
+  background-size: cover;
+  padding: 1px;
 }
 
 .home-item {
-    width: 50%;
-    margin-right: auto;
-    margin-top: 15%;
+  width: 50%;
+  margin-right: auto;
+  margin-top: 15%;
+}
+
+@media (max-width: 768px) {
+    .home {
+        height: 400px;
+    }
+    .home-item {
+        width: 100%;
+    }
 }
 
 .home-item h2 {
-    font-size: 45px;
-    color: #fff;
+  font-size: 45px;
+  color: #fff;
 }
 
 .home-item p {
-    font-size: 20px;
-    color: #fff;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Projects ..................................................*/
+.projects__item p {
+    margin: 50px 0;
+}
+
+.projects__item button {
+    margin-bottom: 15px;
 }
