@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;700&family=Tajawal:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;700&family=Tajawal:wght@400;700;900&display=swap");
 /* COMMON STYLES */
 :root {
   --maincolor: #ffc527;
@@ -6,7 +6,7 @@
 body {
   direction: rtl;
   text-align: right;
-  font-family: 'Tajawal', sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 .section {
@@ -48,12 +48,12 @@ body {
 }
 
 @media (max-width: 768px) {
-    .home {
-        height: 400px;
-    }
-    .home-item {
-        width: 100%;
-    }
+  .home {
+    height: 400px;
+  }
+  .home-item {
+    width: 100%;
+  }
 }
 
 .home-item h2 {
@@ -68,20 +68,68 @@ body {
 
 /* Projects ..................................................*/
 .projects__item p {
-    margin: 50px 0;
+  margin: 50px 0;
 }
 
 .projects__item button {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* News .....................................................*/
+.news {
+  background-color: #f0f0f0;
+}
 .news .news--left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .news .news--left img {
-    max-width: 200px;
-    margin-left: 10px;
+  max-width: 200px;
+  margin-left: 10px;
+}
+
+/* Why Choose us ..........................................*/
+.why--item {
+  display: flex;
+  padding: 50px 0;
+}
+
+.why--item img {
+  max-width: 400px;
+}
+
+.why--item__desc {
+  margin-right: 20px;
+}
+
+@media (max-width: 1000px) {
+  .why--item {
+    display: block;
+  }
+  .why--item img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.why--item__icon {
+  display: flex;
+}
+
+.why--item__icon h3, .why--item__icon p {
+  margin-right: 50px;
+}
+
+.single-icon {
+  background: #ffc527;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  border-radius: 100%;
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  position: absolute;
 }
