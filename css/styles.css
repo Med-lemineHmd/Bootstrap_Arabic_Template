@@ -90,35 +90,35 @@ body {
 }
 
 /* Why Choose us ..........................................*/
-.why--item {
+.why__item {
   display: flex;
   padding: 50px 0;
 }
 
-.why--item img {
+.why__item img {
   max-width: 400px;
 }
 
-.why--item__desc {
+.why__item--desc {
   margin-right: 20px;
 }
 
 @media (max-width: 1000px) {
-  .why--item {
+  .why__item {
     display: block;
   }
-  .why--item img {
+  .why__item img {
     width: 100%;
     margin-bottom: 15px;
   }
 }
 
-.why--item__icon {
+.why__item--icon {
   display: flex;
 }
 
-.why--item__icon h3,
-.why--item__icon p {
+.why__item--icon h3,
+.why__item--icon p {
   margin-right: 50px;
 }
 
@@ -153,7 +153,7 @@ body {
   font-weight: bold;
 }
 
-.who--video {
+.who-video {
   padding: 100px 0;
   text-align: center;
 }
@@ -176,4 +176,56 @@ body {
 .play-btn:hover {
   background-color: #ffc527;
   color: #fff;
+}
+
+/* Empty ...............................................*/
+.empty {
+  height: 200px;
+  background-color: #fff;
+}
+
+/* Subscribe ...........................................*/
+.subscribe {
+  height: 450px;
+  background-image: url(../images/subscribe-our-newsletter-bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.subscribe__item {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  text-align: center;
+}
+
+.subscribe__item h2 {
+  font-size: 40px;
+}
+
+.subscribe__item .form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribe__item .form input {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+  border: medium none transparent;
+  border-radius: 100px;
+  height: 45px;
+  padding: 0 20px;
+}
+
+.subscribe__item .form button {
+  width: 15%;
+  border: medium none transparent;
+  border-radius: 100px;
+  height: 45px;
+  transition: .3s;
+  -webkit-transition: .3s;
 }
