@@ -117,7 +117,8 @@ body {
   display: flex;
 }
 
-.why--item__icon h3, .why--item__icon p {
+.why--item__icon h3,
+.why--item__icon p {
   margin-right: 50px;
 }
 
@@ -132,4 +133,47 @@ body {
   display: inline-block;
   color: #fff;
   position: absolute;
+}
+
+/* Who we are ....................................................*/
+
+.who-we-are {
+  background-image: url(../images/who-we-are-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: #ddd;
+  height: 600px;
+}
+
+.who-heading {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 0 0 7px #333;
+  font-weight: bold;
+}
+
+.who--video {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.play-btn {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 100%;
+  display: inline-block;
+  color: #ffc527;
+  font-size: 70px;
+  height: 140px;
+  line-height: 140px;
+  
+  padding-left: 12px;
+  text-align: center;
+  width: 140px;
+  transition: all 0.3s ease 0s;
+}
+
+.play-btn:hover {
+  background-color: #ffc527;
+  color: #fff;
 }
