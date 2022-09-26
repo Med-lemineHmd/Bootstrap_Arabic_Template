@@ -362,3 +362,30 @@ footer a:hover {
 .copyright-left {
   text-align: left;
 }
+
+
+/* ************************************* Blog ******************************************************* */
+
+.breadcrumb {
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+}
+
+.blog .jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--maincolor);
+}
+
+.blog .jumbotron .blog-desc  {
+  width: 55%;
+}
+
+.blog .jumbotron .blog-img {
+  width: 40%;
+}
